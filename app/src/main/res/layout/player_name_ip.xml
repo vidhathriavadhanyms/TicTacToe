@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/wood"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Player : 2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/pl2"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="268dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        tools:textColor="@android:color/background_light"
+        android:textAppearance="@android:style/TextAppearance.Large" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/p2"
+        android:background="@drawable/button_1"
+        android:layout_alignTop="@+id/pl2"
+        android:layout_alignStart="@+id/p1"
+        android:text="  " />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginStart="12dp"
+        android:background="@drawable/button_1"
+        android:id="@+id/p1"
+        android:layout_alignTop="@+id/pl1"
+        android:layout_toEndOf="@+id/pl1"
+        android:text="  " />
+
+    <TextView
+        android:text="Player : 1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+
+        android:id="@+id/pl1"
+        android:layout_marginBottom="35dp"
+        tools:textSize="24sp"
+        tools:textColor="@android:color/background_light"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:layout_above="@+id/pl2"
+        android:layout_alignStart="@+id/pl2" />
+
+    <Button
+        android:text="EXIT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_1"
+        android:id="@+id/exit"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="35dp"
+        android:layout_alignStart="@+id/pl2" />
+
+    <Button
+        android:text="ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_1"
+        android:id="@+id/ok"
+        android:layout_alignEnd="@+id/p2"
+        android:layout_marginEnd="19dp"
+        android:layout_alignBottom="@+id/exit"
+        android:layout_alignTop="@+id/exit" />
+</RelativeLayout>
